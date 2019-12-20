@@ -18,6 +18,7 @@
 
     <modules>
         <module>mv-register-center</module>
+        <module>mv-service-hello</module>
     </modules>
 
     <properties>
