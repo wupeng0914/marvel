@@ -1,22 +1,11 @@
 package com.marvel.mvservicehello;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 @SpringBootApplication
-@RestController
 public class MvServiceHelloApplication {
-
-	@Value("${server.port}")
-	private String port;
-
-	@RequestMapping("/hello")
-	public String home() {
-		return "Hello world,from " + port;
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(MvServiceHelloApplication.class, args);
