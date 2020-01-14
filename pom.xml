@@ -22,6 +22,7 @@
         <module>mv-customer-feign</module>
         <module>mv-customer-ribbon</module>
         <module>mv-zuul</module>
+        <module>mv-common</module>
     </modules>
 
     <properties>
